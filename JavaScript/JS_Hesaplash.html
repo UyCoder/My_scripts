@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0069)file:///C:/Users/me/Documents/My%20Web%20Sites/musape/hesaplash1.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>ھېسابلاش</title>
+		<link href="./ھېسابلاش_files/firstcss.css" rel="stylesheet" type="text/css"/>
+		<script>
+			function hesap(){
+			a=Number(document.getElementById("first").value);
+			b=Number(document.getElementById("second").value);
+			document.getElementById("jawap1").innerHTML=a + b;
+			document.getElementById("jawap2").innerHTML=a - b;
+			document.getElementById("jawap3").innerHTML=a * b;
+			document.getElementById("jawap4").innerHTML=a / b;
+			document.getElementById("jawap5").innerHTML=(a + b)/2;
+			}
+		</script>
+		<style type="text/css">
+		.auto-style1 {
+			text-align: right;
+			margin-left: 40px;
+		}
+
+		.auto-style2 {
+			margin-left: 20px;
+		}
+
+		.auto-style3 {
+			margin-left: 20px;
+		}
+
+		.مەزمۇن{
+			font-family: "UKIJ Tuz";
+			font-size: medium;
+			color: #000000;
+			float: right;
+		}
+		</style>
+	</head>
+	<body class="مەزمۇن">
+		<p class="auto-style1">
+			 <input id="first" class="auto-style2"/>بىرىنچى ساننىڭ قىممىتى  <br/>
+			 <input id="second" class="auto-style3"/>ئىككىنچى ساننىڭ قىممىتى<br/>
+			 <button onclick="hesap()" class="مەزمۇن">قىممىتىنى ھېسابلاش</button><br/><br/>
+			 <span id="jawap1"></span> ئىككى ساننىڭ يىغىنىدىسى  <br/>
+			 <span id="jawap2"></span> ئىككى ساننىڭ ئايرىمىسى <br/>
+			 <span id="jawap3"></span> ئىككى ساننىڭ كۆپەيتمىسى <br/>
+			 <span id="jawap4"></span> ئىككى ساننىڭ بۆلۈنمىسى <br/>
+			 <span id="jawap5"></span> ئىككى ساننىڭ ئوتتۇرىچە قىىممىتى <br/>
+		</p>
+	</body>
+</html>
