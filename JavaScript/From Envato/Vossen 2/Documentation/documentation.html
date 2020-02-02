@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Vossen - Multipurpose HTML Template</title>
+        <link rel="icon" href="css/favicon.png" type="image/png">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/docs.css" rel="stylesheet" type="text/css" media="all">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300%7CRaleway:400,200,300' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+        <!--Start Header-->
+        <header class="navbar navbar-default dark wide">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <div class="container">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar top-bar"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
+                        </button>
+                        <a class="navbar-brand scroll-btn" href="#installation"><img src="css/logo.png" alt="Vossen"></a>
+                    </div>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <div class="container">
+                        <ul class="nav navbar-nav menu-right">
+
+                            <li class="dropdown"><a href="http://themeforest.net/item/wunderkind-one-page-parallax-theme/7601990?ref=VossenDesign" class="dropdown-toggle">Discover</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://themeforest.net/item/wunderkind-one-page-parallax-theme/7601990?ref=VossenDesign">Wunderkind</a></li>
+                                    <li><a href="http://themeforest.net/item/vossen-responsive-parallax-multipurpose-template/10240020?ref=VossenDesign">Vossen</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#general" class="scroll-btn">Top</a></li>
+
+                        </ul>
+                    </div>
+                </div><!--/.nav-collapse -->
+
+            </div>
+        </header>
+        <!--End Header-->
+
+        <div class="site-wrapper pb100">
+
+            <!-- Begin Body -->
+            <div class="container">
+                <div class="row">
+
+                    <!-- Side Menu -->
+                    <div class="col-md-2 side-menu hidden-sm hidden-xs" id="leftCol" style="z-index: 99;">
+                            <ul class="nav nav-stacked" id="sidebar">
+                                <li><a href="#general" class="scroll-btn">General Information</a></li>
+                                <li><a href="#html-structure" class="scroll-btn">HTML Structure</a></li>
+                                <li><a href="#css-structure" class="scroll-btn">CSS Structure</a></li>
+                                <li><a href="#javascript" class="scroll-btn">Javascript</a></li>
+                                <li><a href="#cus-styles" class="scroll-btn">Color Skins</a></li>
+                                <li><a href="#bg" class="scroll-btn">Backgrounds</a></li>
+                                <li><a href="#icons" class="scroll-btn">Icons</a></li>
+                                <li><a href="#sliders" class="scroll-btn">Sliders</a></li>
+                                <li><a href="#portfolio" class="scroll-btn">Portfolio</a></li>
+                                <li><a href="#map" class="scroll-btn">Map</a></li>
+                                <li><a href="#contact" class="scroll-btn">Contact Form</a></li>
+                                <li><a href="#twitter" class="scroll-btn">Twitter Feed</a></li>
+                                <li><a href="#subscribe" class="scroll-btn">Subscribe Mailchimp</a></li>
+                            </ul>
+                    </div>
+
+
+                    <div class="col-md-10 content-wrapper">
+
+                        <!-- General Information -->
+                        <div class="col-lg-12 doc-box" id="general">
+                            <h2>General Information</h2>
+                            <p>This template includes following pages:</p>
+
+                            <div class="box">
+                                <ul>
+                                    <li>
+                                        index.html
+                                    </li>
+                                    <li>
+                                        home-video.html
+                                    </li>
+                                    <li>
+                                        home-fullwidth.html
+                                    </li>
+                                    <li>
+                                        home-landing-page.html
+                                    </li>
+                                    <li>
+                                        shortcodes.html
+                                    </li>
+                                </ul>
+                                <p>
+                                    Stylesheets <strong>(CSS files)</strong> are placed in <strong>/css/</strong> folder.<br>
+                                    All Images are in <strong>/img/</strong> folder.<br>
+                                    Javascripts files are in <strong>/js/</strong> folder.<br>
+                                    And all PHP files are in <strong>/php/</strong> folder.<br>
+                                </p>
+                            </div>
+                        </div>
+
+                         <!--HTML Structure-->
+                        <div class="col-lg-12 doc-box" id="html-structure" style="">
+                            <h2>HTML Structure</h2>
+                            <p>
+
+                                The template is based on latest <a href="http://getbootstrap.com/"><strong>Bootstrap 3</strong></a>, the most popular framework for developing responsive, mobile friendly projects.
+                                <br>
+                                <br>
+                                Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts.
+
+                                <br>
+                                <br>
+                                Create a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding, then create .row and add columns with appropriate device name (xs, sm, md, lg) and grid number (2, 4, 6, 12).
+                                <br>
+                                <br>
+                                <strong>For full documentation, please visit Bootstrap 3 site: <a href="http://getbootstrap.com/css/">http://getbootstrap.com/css/</a></strong>
+                            </p>
+
+                            <div class="col-lg-12 doc-box highlight box">
+                                <pre style="padding-bottom:00px"><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span>&lt;div class="col-lg-12"&gt;</span>
+      ...
+    <span>&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+                            </div>
+                        </div>
+
+
+                         <!--CSS Structure-->
+                        <div class="col-lg-12 doc-box" id="css-structure" >
+                            <h2>CSS Structure</h2>
+                            <p>
+                                Well organized and labeled CSS files is one of my priorities.
+                                <br>
+                                These are the CSS files you're be using in the template:
+                                <br>
+                            </p>
+
+                            <div class="col-lg-12 highlight box">
+                                <ul>
+                                    <li>
+                                        <strong>style.css </strong> (Elements such as titles, sections, backgrounds, column styles, etc...)
+                                    </li>
+                                    <li>
+                                        <strong>css/colors/.css </strong> (template color skins)
+                                    </li>
+                                    <li>
+                                        <strong>bootstrap.css </strong> (Generic styles and the basic layout structure styles)
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                         <!--Javascript-->
+                        <div class="col-lg-12 doc-box" id="javascript" >
+                            <h2>Javascript</h2>
+                            <p>
+
+                               jQuery - is a Javascript library that greatly reduces the amount of code that you must write.
+                                <br>
+                                For more information, please visit <a href="http://www.jquery.com/"><strong>http://www.jquery.com/</strong></a>
+                                <br>
+                                <br>
+                                All the plugins for this template are in <strong>plugin.js</strong> file and they are fully labeled. Plugin list are in <a href="#kreda"><strong>Credits</strong></a> section also.
+                                <br>
+                                The initialization of the elements, libs and features is made by the file <strong>scripts.js</strong>, in the js folder.
+                            </p>
+
+
+                        </div>
+
+                         <!--Color Skins-->
+                        <div class="col-lg-12 doc-box" id="cus-styles" >
+                            <h2>Color Skins</h2>
+
+                            <p>
+                                15 pre made color skins are included with template:
+                            </p>
+
+                            <div class="col-lg-12 highlight box">
+
+                                <ul>
+                                    <li>
+                                        pink.css
+                                    </li>
+                                    <li>
+                                        blue.css
+                                    </li>
+                                    <li>
+                                        blue-2.css
+                                    </li>
+                                    <li>
+                                        purle.css
+                                    </li>
+                                    <li>
+                                        green.css
+                                    </li>
+                                    <li>
+                                        green2.css
+                                    </li>
+                                    <li>
+                                        yellow.css
+                                    </li>
+                                    <li>
+                                        orange.css
+                                    </li>
+                                    <li>
+                                        red.css
+                                    </li>
+                                    <li>
+                                        red2.css
+                                    </li>
+                                    <li>
+                                        darkgrey.css
+                                    </li>
+                                    <li>
+                                        brown.css
+                                    </li>
+                                    <li>
+                                        midnight.css
+                                    </li>
+                                    <li>
+                                        beige.css
+                                    </li>
+                                    <li>
+                                        black.css
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <p>
+                                To use one of the pre-made color skins, change the name of the current linked color css file in the head section of HTML file:
+                            </p>
+
+                            <div class="col-lg-12 highlight box">
+
+                                <pre><code><span>&lt;!-- Skin Color --></span>
+<span>&lt;link rel="stylesheet" href="css/colors/<span class="code-highlight">pink.css</span>" id="color-skins"/&gt;</span></code></pre>
+
+                            </div>
+
+                            <br><br><br><br>
+
+                            <p>
+                                Also you can make a custom color skin by duplicating any of the color css files and changing the colors hex code.
+                            </p>
+
+                        </div>
+
+
+                         <!--Background-->
+                        <div class="col-lg-12 doc-box" id="bg" >
+                            <h2>Backgrounds</h2>
+                            <p>
+
+                                Some of the sections have backgrounds with parallax effect and to change those backgrounds, <br>
+                                simply open <strong>style.css</strong> and on Backgrounds section of that file, change the background link of corresponding html sections:
+
+                            </p>
+                            <br>
+                            <p>
+                               <strong>style.css / background section:</strong>
+                            </p>
+
+                            <div class="col-lg-12 highlight box" style="margin-bottom: 20px;">
+                                <pre><code><span>.parallax-section-1 {</span>
+<span>background-image: url(../img/backgrounds/bg-1.jpg);</span>
+<span>}</span>
+<span>.parallax-section-2 {</span>
+<span>background-image: url(../img/backgrounds/bg-2.jpg);</span>
+<span>}</span>
+<span>.parallax-section-3 {</span>
+<span>background-image: url(../img/backgrounds/bg-3.jpg);</span>
+<span>}</span>
+
+    <span>etc...</span>
+
+<span>.parallax-section-8 {</span>
+<span>background-image: url(../img/backgrounds/bg-8.jpg);</span>
+<span>}</span></code></pre>
+
+
+                            </div>
+
+                            <div class="col-lg-12">
+
+                                <h3>Revolution Slider Backgrounds</h3>
+                                <p>Background images of each slide are located at the top of the slide list item in html file.</p>
+
+                                <div class=" highlight box">
+                                    <pre><code><span>&lt;!-- SLIDE 1 --></span>
+<span>&lt;li data-transition="fade" data-slotamount="7"</span>
+<span>&lt;img src="<span class="code-highlight">img/backgrounds/bg-home-fullscreen.jpg</span>"</span></code></pre>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-lg-12">
+
+                                <h3>Dotted Pattern Overlay</h3>
+                                <p>Each section with background have dotted pattern overlay and all styles are located in <strong>style.css</strong> file from line 304 to 352.</p>
+                                <p>To remove those overlays you simply can delete everything from line 304 to 352.</p>
+                                <p>For specific overlay removal, for example if you want to remove overlay only on parallax section 5, you delete only highlighted part below:</p>
+                                <p>
+                               <strong>style.css:</strong>
+                            </p>
+                                <div class=" highlight box">
+                                    <pre><code><span>#home-parallax-fullscreen:after,</span>
+<span>.parallax-section-1:after,</span>
+<span>.parallax-section-2:after,</span>
+<span>.parallax-section-3:after,</span>
+<span>.parallax-section-4:after,</span>
+<span class="code-highlight">.parallax-section-5:after,</span>
+<span>.parallax-section-6:after,</span>
+<span>.parallax-section-7:after,</span>
+<span>.parallax-section-8:after {</span>
+<span>content: "";
+position: absolute;
+background: url(../img/assets/dot-pattern.png) repeat;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+z-index: -1;
+}</span>
+</code></pre>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <!--Icons-->
+                        <div class="col-lg-12 doc-box" id="icons" >
+                            <h2>Icons</h2>
+                            <p>
+
+                                <strong>Ion Icons</strong> and <strong>Simple Line Icons</strong> are @font-face icons sets that you can change size, color etc.. using CSS.
+                                <br>
+                                If you need more information about these icon sets, please visit this sites:
+                                <br>
+                                <br>
+                                <a href="http://ionicons.com/">http://ionicons.com/</a>
+                                <br>
+                                <a href="http://graphicburger.com/simple-line-icons-webfont/">http://graphicburger.com/simple-line-icons-webfont/</a>
+
+                            </p>
+                            <br>
+                            <p>HTML Markup:</p>
+
+                            <div class="col-lg-12 highlight box">
+                                <pre><code><span>&lt;i class="icon ion-home"&gt;&lt;/i&gt;</span>
+
+<span>&lt;i class="icon-eyeglasses"&gt;&lt;/i&gt;</span></code></pre>
+
+                            </div>
+
+
+                        </div>
+
+                        <!--Sliders-->
+                        <div class="col-lg-12 doc-box" id="sliders">
+                            <h2>Sliders</h2>
+                            <p>
+                                Touch enabled jQuery plugin "Owl Carousel" lets you create beautiful responsive carousel slider and it's used in Quotes and Testimonials sections and also in AJAX Project pages.
+                                <br><br>
+                                If you need more information about <a href="http://owlgraphic.com/owlcarousel/">Owl Carousel</a> please visit this site: <a href="http://owlgraphic.com/owlcarousel/">http://owlgraphic.com/owlcarousel/</a>
+                                <br>
+
+                            </p>
+                            <br>
+                            <p>
+                                HTML Markup:
+                            </p>
+
+                            <div class="col-lg-12 highlight box">
+                                <pre><code><span>&lt;div id="owl-example" class="owl-carousel"></span>
+<span>&lt;div> Your Content &lt;/div></span>
+<span>&lt;div> Your Content &lt;/div></span>
+<span>&lt;div> Your Content &lt;/div></span>
+<span>&lt;div> Your Content &lt;/div></span>
+<span>&lt;/div></span></code></pre>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <!--Portfolio-->
+                        <div class="col-lg-12 doc-box" id="portfolio" style="padding-bottom: 0px;">
+                            <h2>Portfolio</h2>
+                            <p>
+
+                                A powerful jQuery plugin <a href="http://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959">Cube Portfolio</a> that provides beautiful animated filtering, custom captions and it's perfect for portfolios, galleries, team members, blog posts or any other ordered content with dynamic and responsive layouts.
+
+                            </p>
+                            <div class="col-lg-12 highlight box" style="background-color:#f0f0f0; color:#ec005f; margin:10px 0 15px 0; padding:10px;">
+                                <strong>One notice:</strong> Portfolio AJAX Projects pages, videos in lightbox and Load More button will be functional only on your server.
+                                <br>
+                                <strong>Upload to your server when testing.</strong>
+                            </div>
+                            <p>
+                                Creating portfolio is quite easy following just two simple steps.<br>
+                                1) Add Portfolio Item to Section<br>
+                                2) Create Portfolio Item Description Page
+                            </p>
+
+                            <h4>Adding Portfolio Items to the Section</h4>
+                            <p>Find the below code and add it to portfolio list inside &lt;div id="grid-container..</p>
+
+
+                            <p>
+                                HTML Markup for project item:
+                            </p>
+
+                            <div class="col-lg-12 highlight box" style="margin-bottom: 20px;">
+                                <pre><code><span>&lt;li class="cbp-item web-desing" id="effect"></span>
+<span>&lt;div class="img"></span>
+    <span>&lt;img src="img/portfolio/1.jpg" class="img-responsive" alt=""/></span>
+    <span>&lt;div class="overlay"></span>
+        <span>&lt;ul class="expand"></span>
+            <span>&lt;li class="cbp-l-caption-title">Future Trend&lt;/li></span>
+            <span>&lt;li class="cbp-l-caption-desc">by Vossen Design&lt;/li></span>
+            <span>&lt;li class="cbp-l-icon">&lt;a href="img/portfolio/1.jpg" class="cbp-lightbox" data-title="Name&lt;br>by Me">&lt;i class="icon-magnifier">&lt;/li></span>
+            <span>&lt;li class="cbp-l-icon">&lt;a href="projects/project1.html" class="cbp-singlePage">&lt;i class="icon-link">&lt;/i>&lt;/a>&lt;/li></span>
+        <span>&lt;/ul></span>
+        <span>&lt;a class="close-overlay hidden">x</a></span>
+    <span>&lt;/div></span>
+<span>&lt;/div></span>
+<span>&lt;/li></span></code></pre>
+
+                            </div>
+
+
+                            <h4>Create Portfolio Item Description Page</h4>
+                            <p>Each AJAX project description is in projects folder.</p>
+                            <p>Use and edit one of 18 included in projects folder or you can create a new HTML page inside the /projects/ folder.</p>
+
+                            <p>
+                                For loading more projects with "Load More" button check loadMore.html in / projects / folder. Add project items to the <strong>&lt;div class="cbp-loadMore-block1"></strong> and <strong>&lt;div class="cbp-loadMore-block2"></strong>
+
+
+
+                            </p>
+                        </div>
+
+
+                        <!-- Google Map -->
+                        <div class="col-lg-12 doc-box" id="map">
+                            <h3>Google Map</h3>
+                            <div class="doc-box-text">
+                                <p>Embed a Google map</p>
+
+                                <ol>
+                                  <li>Open <a href="https://www.google.com/maps" target="_blank">Google Maps</a>.</li>
+                                  <li>Go to the directions,&nbsp;map, or Street View image you'd like to embed.</li>
+                                  <li>In the top left, click Menu</li>
+                                  <li>Click <strong>Share or embed map</strong>.</li>
+                                  <li>Click <strong>Embed map</strong>.</li>
+                                  <li>Copy the text in the box. Paste it into vossen-map section of your html file.</li>
+                                </ol>
+                                <pre>
+
+&lt;!-- Map -->
+&lt;section class="vossen-map">
+
+&lt;!-- Paste your map iframe here -->
+&lt;iframe height="550" src="https://maps.google.com/maps?q=Renaissance%20New%20York%20Hotel%2057%2C%20New%20York%2C%20USA&t=m&z=17&output=embed&iwloc=near" border="0" marginwidth="0" marginheight="0">&lt;/iframe>
+
+&lt;/section>
+&lt;!-- End Map -->
+</pre>
+</div></div>
+
+                         <!--Contact Form-->
+                        <div class="col-lg-12 doc-box" id="contact">
+                            <h2>Contact Form (PHP Script)</h2>
+                            <p>
+
+                                Only thing you need to do to make working contact form is to setup your email address.
+                                <br>
+                                To do this, please open "<strong class="highlight">contact-form.php</strong>" file from <strong class="highlight">/ php /</strong> folder and change the email address on line 46:
+                            </p>
+                            <div class="col-lg-12 highlight box" style="background-color:#f0f0f0; color:#ec005f; margin:10px 0 20px 0; padding:10px;">
+                                <strong>One notice:</strong> this will be functional only on your server, php files can not be executed on your local computer.
+                                <br>
+                                <strong>Upload to your server when testing.</strong>
+                            </div>
+
+                            <p>
+                                <strong class="highlight">contact-form.php</strong> markup:
+                            </p>
+
+                            <div class="col-lg-12 highlight box">
+                                <pre><code><span style="color:#999;">46</span><span>   $address = "<span class="code-highlight">youremail@domain.com</span>";</span></code></pre>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <!--Twitter Feed-->
+                        <div class="col-lg-12 doc-box" id="twitter">
+                            <h2>Twitter Feed</h2>
+                            <p>
+
+                                jQuery Tweetie - Simple Twitter Feed Script that works with new Twitter 1.1 API.<br>
+
+                            <div class="col-lg-12 highlight box" style="background-color:#f0f0f0; color:#ec005f; margin:5px 0 20px 0; padding:10px;">
+                                <strong>One notice:</strong> Twitter Feed will be functional only on your server, php files can not be executed on your local computer.
+                                <br>
+                                <strong>Upload to your server when testing.</strong>
+                            </div>
+                            </p>
+                            <p>
+                                <br>
+                                New Twitter API requires oAuth Token Key, so it's three step process.<br>
+                                <h4>Step 1</h4>
+                                First, you need a consumer key and secret keys. Get one from <strong><a href="https://dev.twitter.com/apps">https://dev.twitter.com/apps</a></strong>
+                                <h4>Step 2</h4>
+                                In "<strong class="highlight">/ php /</strong>" folder edit "<strong class="highlight">twitter-info.php</strong>" file and replace variables with your Consumer and oAuth Keys.
+
+
+                            </p>
+                            <br>
+                            <p>
+                                <strong>config.php:</strong>
+                            </p>
+
+                            <div class="col-lg-12 highlight box" style="margin-bottom:40px">
+                                <pre><code><span style="color:#999;">// Consumer Key<br></span><span>define('CONSUMER_KEY', '<span class="code-highlight">CONSUMER_KEY_HERE</span>');</span><br><span>define('CONSUMER_SECRET', '<span class="code-highlight">CONSUMER_SECRET_HERE</span>');</span><br><br><span style="color:#999;">// User Access Token<br></span><span>define('ACCESS_TOKEN', '<span class="code-highlight">ACCESS_TOKEN_HERE</span>');</span><br><span>define('ACCESS_SECRET', '<span class="code-highlight">ACCESS_SECRET_HERE</span>');</span></span></code></pre>
+
+                            </div>
+
+
+                            <h4>Step 3</h4>
+                                Open <strong class="highlight">scripts.js</strong> file from js folder and on line 136 put in your username between quotation marks:
+
+                            <div class="col-lg-12 highlight box" style="margin-top:10px">
+                                <pre><code><span style="color:#999;">/* -------------------</span>
+<span style="color:#999;">Twitter Feed
+---------------------*/</span>
+<span>$('.tweet').twittie({</span>
+<span class="code-highlight">username: 'your-username',</span>
+<span>dateFormat: '%b. %d, %Y',
+template: '{{tweet}} &lt;div class="date">{{date}}&lt;/div>',
+count: 3,
+hideReplies: false
+});
+
+</span></code></pre>
+
+                        </div></div>
+
+
+                        <!--Subscribe Mailchmp-->
+                        <div class="col-lg-12 doc-box" id="subscribe" >
+                            <h2>Subscribe Mailchmp</h2>
+                            <p>
+
+                                The subscription form is integrated with <a href="http://mailchimp.com/"><strong>Mailchimp</strong></a> mailing list. <br>
+                                You need to have an active Mailchimp account and to create a list. <br><br>
+
+                                Once you have the Mailchimp account and list you have to configure the subscription file with your API Key & List ID. <br>
+                                In <strong class="highlight">/ php /</strong> folder open the <strong class="highlight">subscribe-mailchimp.php</strong> file and  and change the variables:
+
+                            <p><strong>subscribe-mailchimp.php :</strong></p>
+
+                            <div class="col-lg-12 highlight box" style="margin-bottom:20px">
+                                <pre><code><span style="color:#999;">// Authentication</span>
+<span>$api_key    = '<span class="code-highlight">your-api-key</span>';</span>
+<span>$list_id    = '<span class="code-highlight">your-list-id</span>';</span></code></pre>
+
+                            </div>
+
+                            <p>
+                                <strong style="color:#111;">
+                                - How to find or generate your API Key * <a href="http://kb.mailchimp.com/accounts/management/about-api-keys#Find-or-Generate-Your-API-Key"><i>http://kb.mailchimp.com/accounts/management/about-api-keys</i></a>    <br>
+
+                                - How to find your List ID * <a href="http://kb.mailchimp.com/lists/managing-subscribers/find-your-list-id#Finding-the-List-ID-on-the-list"><i>http://kb.mailchimp.com/lists/managing-subscribers/find-your-list-id</i></a>    <br>
+                                </strong>
+                            </p>
+                            <div class="col-lg-12 highlight box" style="background-color:#f0f0f0; color:#ec005f; margin:5px 0 20px 0; padding:10px;">
+                                <strong>One notice:</strong> Subscription Form will be functional only on your server, php files can not be executed on your local computer.
+                                <br>
+                                <strong>Upload to your server when testing.</strong>
+                            </div>
+                        </div>
+
+
+
+
+                    <div class="col-lg-12 doc-box" id="konttakt" >
+                        <h2>Contact</h2>
+
+                           <h4>We hope you'll enjoy the Vossen template!</h4>
+                           <h4 style="letter-spacing:0">
+                               Please do not hesitate to contact us if you have any questions.
+                               <br><br>
+                            </h4>
+                           <br>
+
+
+
+                           <div class="col-lg-12 highlight box">
+
+
+
+                                <p>
+                                    vossendesign@gmail.com
+                                </p>
+<a href="http://themeforest.net/user/VossenDesign/portfolio">https://themeforest.net/user/vossendesign/portfolio</a><br />
+
+                            </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Container -->
+    </div><!-- End Site Wrapper -->
+
+
+        <!-- Scripts -->
+        <script src="css/jquery.min.js"></script>
+
+    </body>
+</html>

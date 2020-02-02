@@ -1,0 +1,108 @@
+$bg-color: 		 #202B2E
+$accent-color: #D8303D
+
+$paintings: (1: 'https://upload.wikimedia.org/wikipedia/commons/1/19/Brandt_Departure_from_Wilan%C3%B3w.jpg', 2: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Kawase_Z%C3%B4j%C3%B4ji.jpg/398px-Kawase_Z%C3%B4j%C3%B4ji.jpg', 3: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Albrecht_D%C3%BCrer_-_The_Large_Piece_of_Turf%2C_1503_-_Google_Art_Project.jpg/467px-Albrecht_D%C3%BCrer_-_The_Large_Piece_of_Turf%2C_1503_-_Google_Art_Project.jpg', 4: 'https://upload.wikimedia.org/wikipedia/commons/e/ed/Bellotto_Bridgettine_Church_and_Arsenal.jpg?1465410364618')
+
+%details
+	background-color: white
+	position: relative
+	height: 70px
+	z-index: -10
+	transition: all .5s ease-in-out
+	display: flex
+
+html
+	background-color: $bg-color
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 100vh
+	font-family: 'IM Fell French Canon'
+	
+body
+	perspective: 800px
+
+body *
+	transform-style: preserve-3d
+
+p, h1
+	margin: 0
+	font-weight: 700
+
+.screen
+	width: 400px
+	margin: 50px
+	padding-top: 120px
+	background: transparent
+	transform: rotate3d(0,1,0, -0deg)
+	.card
+		margin: 0
+		height: 200px
+		transition: height .5s ease-in-out
+		@each $id, $painting in $paintings
+			&:nth-of-type(#{$id})
+				.front-box
+					background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($painting)
+					background-size: cover
+		
+		.front-box
+			height: 200px
+			box-sizing: border-box
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			overflow: hidden
+			&:hover
+				cursor: pointer
+				h1
+					border-bottom: 2px solid $accent-color
+				p
+					opacity: 1
+			h1
+				border-bottom: 2px solid transparent
+				padding-bottom: 5px
+				top: 55px
+				left: 20px
+				color: white
+				z-index: 20
+				transition: all .4s ease-in-out
+			p
+				color: white
+				font-style: italic
+				padding-top: 10px
+				font-weight: 400
+				opacity: 0
+				transition: all .5s ease-in-out .2s
+					
+			.img-wrapper
+				height: 200px
+				overflow: hidden
+				width: 100%
+				height: 100%		
+		.details-1
+			@extend %details
+			transform: rotate3d(1, 0, 0, -90deg)
+			transform-origin: top
+			box-shadow: inset 0px -45px 52px 0px rgba(0,0,0,0.75)
+			p
+				margin: auto
+		.details-2
+			@extend %details
+			transform: translate3d(0, -140px, 0px) rotate3d(1, 0, 0, 90deg)
+			transform-origin: bottom
+			box-shadow: inset 0px 0px 100px 30px rgba(0,0,0,0.75)
+			p
+				margin: auto
+	
+.unfold
+	height: 70px
+	transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg) !important
+	box-shadow: inset 0px -45px 52px -70px rgba(0,0,0,0.75) !important
+
+.span
+	height: 340px !important
+
+	
+
+				

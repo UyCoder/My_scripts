@@ -1,0 +1,15 @@
+- cards = [{ title: 'Departure from Wilanów', date: 1887, author: 'Józef Brandt', info: 'of John III Sobieski and Marysienka'},
+					 { title: 'Shiba Zôjôji', date: 1925, author: 'Hasui Kawase', info: 'from series "12 views of Tokyo"'},
+					 { title: 'Das große Rasenstück', date: 1503, author: 'Albrecht Dürer', info: 'study of wild plants'},
+					 { title: 'Długa Street', date: 1780, author: 'Bernardo Bellotto', info: "painted by king Stanisław August's court painter"}]
+
+.screen
+	- cards.each do |card|
+		.card
+			.front-box
+				%h1 #{card[:title]}
+				%p #{card[:info]}
+			.details-1
+				%p #{card[:author]}
+			.details-2
+				%p ~ #{card[:date]} ~

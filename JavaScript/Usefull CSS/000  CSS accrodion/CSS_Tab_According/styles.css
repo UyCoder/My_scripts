@@ -1,0 +1,70 @@
+html {
+  font-family: 'ff-dagny-web-pro', 'DagnyWeb', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: PapayaWhip;
+}
+
+.title {
+  text-align: center;
+  font-family: 'UKIJTuzKitab';
+}
+
+.accordion {
+  width: 480px;
+  margin: 30px auto;
+  border: 1px solid rgba(50, 50, 50, 0.25);
+}
+
+.accordion .item {
+  overflow: hidden;
+  background-color: white;
+}
+
+.accordion .header {
+  padding: 15px 20px;
+  cursor: pointer;
+  background: #3498db;
+  border-bottom: 1px solid #2980b9;
+  color: white;
+}
+
+.accordion .header h3 {
+	font-family: 'UKIJTuzKitab';
+  margin: 0;
+}
+
+.accordion .content {
+  padding: 0 20px;
+  font-size: 15px;
+  line-height: 20px;
+  max-height: 0;
+  transition: all ease-in-out 0.2s;
+}
+
+.accordion .item.open .content {
+  padding: 20px;
+  max-height: 150px;
+}
+
+@font-face {
+  font-family: "UKIJTuzKitab";
+  src: url("./fonts/UKIJTuzK.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/UKIJTuzK.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/UKIJTuzK.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/UKIJTuzK.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/UKIJTuzK.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/UKIJTuzK.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/UKIJTuzK.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.uyghur {
+    font-family: 'UKIJTuzKitab';
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 25px;
+}

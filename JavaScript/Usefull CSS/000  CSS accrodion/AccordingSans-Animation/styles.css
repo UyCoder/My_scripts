@@ -1,0 +1,54 @@
+* {
+	
+    margin: 0;
+    padding: 0;
+    font: normal 1em/150% Sans-Serif;
+}
+
+input,
+.content {display: none;}
+
+label,
+input:checked + .content {display: block;}
+
+label {
+    cursor: pointer;
+    background: -webkit-linear-gradient(#c00, #900);
+    color: #fff;
+    padding: 5px 25px;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+}
+
+label:hover {background: -webkit-linear-gradient(#900, #c00);}
+
+.content {
+    padding: 25px;
+    text-indent: 25px;  
+    text-align: justify;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+p + p {margin:20px 0 0;}
+@font-face {
+  font-family: "UKIJTuzKitab";
+  src: url("./fonts/UKIJTuzK.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/UKIJTuzK.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/UKIJTuzK.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/UKIJTuzK.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/UKIJTuzK.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/UKIJTuzK.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/UKIJTuzK.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.uyghur {
+    font-family: 'UKIJTuzKitab';
+    font-size: 20px;
+	text-align: right;
+	direction: rtl;
+    font-weight: 100;
+    line-height: 25px;
+}

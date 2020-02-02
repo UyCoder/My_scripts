@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery fsbanner Plugin Examples</title>
+<link href="fsbanner.css" rel="stylesheet" type="text/css">
+<style>
+.container {
+  margin: 10px auto;
+  max-width: 768px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="jquery-script-clear"></div>
+
+<div class="container">
+  <h2>Basic</h2>
+  <div class="fsbanner" id="demo-1">
+    <div style="background-image:url(img/a1.png)"> </div>
+    <div style="background-image:url(img/a2.png)"> </div>
+    <div style="background-image:url(img/a3.png)"> </div>
+    <div style="background-image:url(img/a4.png)"> </div>
+  </div>
+  <h2>With labels</h2>
+  <div class="fsbanner" id="demo-2">
+    <div style="background-image:url(img/a1.png)"><span class="name">Image 1</span></div>
+    <div style="background-image:url(img/a2.png)"><span class="name">Image 2</span></div>
+    <div style="background-image:url(img/a3.png)"><span class="name">Image 3</span></div>
+    <div style="background-image:url(img/a4.png)"><span class="name">Image 4</span></div>
+  </div>
+  <h2>Trigger: mouse hover</h2>
+  <div class="fsbanner" id="demo-3">
+    <div style="background-image:url(img/a1.png)"><span class="name">Image 1</span></div>
+    <div style="background-image:url(img/a2.png)"><span class="name">Image 2</span></div>
+    <div style="background-image:url(img/a3.png)"><span class="name">Image 3</span></div>
+    <div style="background-image:url(img/a4.png)"><span class="name">Image 4</span></div>
+  </div>
+</div>
+More script and css style
+: <a href="http://www.htmldrive.net/" title="HTML DRIVE - Free DHMTL Scripts,Jquery plugins,Javascript,CSS,CSS3,Html5 Library">www.htmldrive.net </a>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script src="fsbanner.js"></script> 
+<script>
+$('#demo-1').fsBanner();
+$('#demo-2').fsBanner();
+$('#demo-3').fsBanner({'trigger':'mouse'});
+</script>
+</body>
+</html>
+

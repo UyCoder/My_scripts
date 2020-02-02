@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">	
+<head>
+	<title>hAccordion</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.haccordion.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".haccordion").haccordion();
+		});
+	</script>
+
+	<style type="text/css">
+		.haccordion .header, .haccordion .content{
+			float: left;
+			height: 250px;
+		}
+		
+		.haccordion .header{
+			width: 20px;
+			background: #ccc;
+			color: #fff;
+			cursor: pointer;
+			border-right:1px solid #fff;
+		}
+		
+		.haccordion .content{
+			display: none;
+			width: 0px;
+			overflow: auto;
+		}
+		
+		.haccordion .content p{
+			margin: 5px;
+		}
+	</style>
+</head>
+<body>More script and css style
+: <a href="http://www.htmldrive.net/" title="HTML DRIVE - Free DHMTL Scripts,Jquery plugins,Javascript,CSS,CSS3,Html5 Library">www.htmldrive.net </a>
+	<div class="haccordion">
+		<div class="header">*1</div>
+		<div class="content"><p>This is a sample of content for Content1 with a large text, testing, testing, testing, testing, testing, testing, testing, testing, testing, testing, testing, testing, testing</p></div>
+		<div class="header">*2</div>
+		<div class="content"><p>This is a sample of content for Content2 with a large text, testing, testing, testing, testing, testing, testing, testing, testing, testing, testing, testing, testing, testing</p></div>
+
+		<div class="header">*3</div>
+		<div class="content"><p>This is a sample of content for Content3 with a large text, testing, testing, testing, testing, testing, testing, testing, testing, testing, testing, testing, testing, testing</p></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css"> 
+	<script type="text/javascript" src="ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+  <h1 class="uyghur">ئەسسالام ئەلەيكۇم</h1>
+  <ul class="tabs group">
+    <li>
+      <a class="one switch activeTab" href="#">First Tab</a>
+    </li>
+    <li>
+      <a class="two switch" href="#">Second Tab</a>
+    </li>
+    <li>
+      <a class="three switch" href="#">Third Tab</a>
+    </li>
+  </ul>
+  <div class="content">
+    <p id="one">This is the content in the first tab.</p>
+    <p id="two">This is the content in the second tab.</p>
+    <p id="three">This is the content in the third tab.</p>
+  </div>
+</div>
+<h2 class="uyghur">بۇغرا گورۇپپىسى</h2>
+<script type="text/javascript">
+$('.one').click(function() {
+	    $('a.switch').removeClass("activeTab");
+	   	$(this).addClass("activeTab");
+      $("#one").show();
+      $("#two").hide();
+      $("#three").hide();
+	});
+  
+$('.two').click(function() {
+	    $('a.switch').removeClass("activeTab");
+	   	$(this).addClass("activeTab");
+      $("#one").hide();
+      $("#two").show()
+      $("#three").hide();
+	});
+  
+$('.three').click(function() {
+	    $('a.switch').removeClass("activeTab");
+	   	$(this).addClass("activeTab");
+      $("#one").hide();
+      $("#two").hide();
+      $("#three").show();
+	});
+  
+
+</script>	
+	
+</body>	
+</html>	
