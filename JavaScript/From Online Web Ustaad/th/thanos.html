@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+     body {
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.5em;
+  background-color: gainsboro;
+}
+.fa {
+  font-size: 4em;
+  color: white;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  margin: 0.1em;
+}
+.fa:last-of-type {
+  float: right;
+}
+h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+        p{
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+section {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.half {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+}
+.pictures {
+  left: 0;
+}
+.picture-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transform: translateY(100vh);
+}
+.picture-container.displayed {
+  opacity: 1;
+  transform: translateY(0);
+}
+.picture-container.picture-1 {
+  background-image: url(than.jpg);
+}
+.picture-container.picture-2 {
+  background-image: url(IRON.jpg);
+}
+.picture-container.picture-3 {
+  background-image: url(gy.jpg);
+}
+.picture-container.picture-4 {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/85862618734531.562ce64798615.jpg);
+}
+.picture-container.picture-5 {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/0bb9ce18734531.562ce64791eb5.jpg);
+}
+.picture-container, .description-container {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+.descriptions {
+  left: 50%;
+  background-color: #02a3fb;
+  transition: all 0.8s ease;
+}
+        
+        
+        .half-descriptions{
+            background: red;
+        }
+.description-container {
+  width: 80%;
+  margin-left: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translate(50vw, -50%);
+}
+.description-container.displayed {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+    
+    
+    </style>
+</head>
+<body>
+    
+<span class="prev fa fa-arrow-circle-left"></span>
+<span class="next fa fa-arrow-circle-right"></span>
+
+<section>
+  <div class="half pictures">
+    <div class="picture-container picture-1 displayed"></div>
+    <div class="picture-container picture-2"></div>
+    <div class="picture-container picture-3"></div>
+    <div class="picture-container picture-4"></div>
+    <div class="picture-container picture-5"></div>
+  </div>
+    <div class="half descriptions">
+      <div class="description-container description-1 displayed">
+        <h3>THANOS</h3>
+        <p>Star-Lord is a master strategist and problem solver who is an expert in close-quarter combat, various human and alien firearms, and battle techniques. He has extensive knowledge of various alien customs, societies, and cultures, and considerable knowledge about cosmic abstracts, such as Oblivion.
+
+As Star-Lord, Peter Quill wears a suit that grants augmented strength and durability and the ability to travel through space. The character uses an "Element Gun", a special meta-pistol capable of projecting one of the four elements (air, earth, fire and water). Star-Lord shares a psychic link with his sentient space vessel, "Ship".</p>
+      </div>
+      <div class="description-container description-2">
+        <h3>IRON MAN</h3>
+        <p>Gamora received treatments from Thanos that enhanced her speed, strength, agility, and durability to rival Adam Warlock's (to better slay the Magus, his evil, future self). Thanos also helped her become a formidable hand-to-hand combatant, trained in the martial-arts techniques from various planets, in the uses of the known weaponry of the Milky Way Galaxy, and stealth techniques. She is also a highly-skilled gymnast and assassin, and formerly possessed a telepathic link to Thanos. She uses a wide variety of weaponry, most notably a dagger whose unknown properties made it capable of slaying even beings of such immense power as Thanos and the Magus.</p>
+      </div>
+      <div class="description-container description-3">
+        <h3>Drax</h3>
+        <p>Drax's initial incarnation's powers included superhuman strength, stamina and resistance to physical injury as well the ability to project concussive blasts of cosmic energy from his hands. He could also travel at high speeds in outer space and hyperspace without air, food, or water. Drax also had telepathy,[40] having used it to engage Thanos in a psychic battle and stalemating him mind to mind.</p>
+      </div>
+      <div class="description-container description-4">
+        <h3>Rocket</h3>
+        <p>Rocket Raccoon possesses the normal attributes of an Earth raccoon, including speed (which has been additionally amplified by his training), and an acute sense of smell, sight, hearing and touch. Sharp claws allow him to scale walls, buildings, and trees with ease. He is an accomplished starship pilot, an expert marksman with the two laser pistols he carries as well as having an affinity for heavy weapons. He is a master military tactician and leader, attributes that help him take charge of the Guardians of the Galaxy when Star-Lord is unavailable.</p>
+      </div>
+      <div class="description-container description-5">
+        <h3>Groot</h3>
+        <p>Groot can absorb wood as food, and has the ability to regenerate. Groot can control trees and plants, using them to attack others, and appears to be resistant to fire. Groot is able to sprout dramatically increasing mass which then severely inhibits movement.
+Groot has been seemingly killed on multiple occasions, each time regrowing from a sprig.</p>
+      </div>
+  </div>
+</section>
+<script>
+    
+    var index = 1;
+var colors = ['#1E4DF1','#4AB835','#DD2E01','#FFC300','#591D8E'];
+
+$('span').click(function(){
+
+  if($(this).hasClass('next') && index < $('.picture-container').length){
+        index++;
+  };
+  
+  if($(this).hasClass('prev') && index > 1){
+        index--;
+  };
+    
+  $('.picture-container, .description-container').removeClass('displayed');
+  $('.picture-'+index+'').addClass('displayed');
+  $('.description-'+index+'').addClass('displayed');
+  $('.descriptions').css('background-color', colors[index-1]);
+  
+});
+
+
+
+
+
+
+
+    
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+}
+ul{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li{
+  list-style: none;
+  margin: 0 35px;
+}
+ul li i{
+  font-size: 60px;
+  color: #262626;
+  transition: .5s;
+}
+ul li input{
+  display: none;
+}
+ul li label{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 0;
+  z-index: 1;
+  cursor: pointer;
+}
+ul li label:before, ul li label:after{
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+}
+ul li label:before{
+  width: 7px;
+  height: 7px;
+  background: #1b1b1b;
+  transition: .5s;
+  z-index: 3;
+}
+ul li label:after{
+  width: 25px;
+  height: 25px;
+  background: #222;
+  border: 2px solid #161616;
+  z-index: 2;
+}
+ul li input:checked ~ label:before{
+  background: rgba(0,176,255,1);
+  box-shadow: 0 0 10px rgba(0,176,255,1),
+              0 0 15px rgba(0,176,255,1),
+              0 0 20px rgba(0,176,255,1),
+              0 0 25px rgba(0,176,255,1),
+              0 0 0 2px rgba(0,176,255,.1);
+}
+ul li input:checked ~ i{
+  color: rgba(0,176,255,1);
+}
