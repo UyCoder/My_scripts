@@ -1,0 +1,33 @@
+<html>
+  <head>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  </head>
+  <body>
+    <div id="timeline" style="height: 180px;"></div>
+	<script type="text/javascript">
+  google.charts.load("current", {packages:["timeline"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var container = document.getElementById('example2.1');
+    var chart = new google.visualization.Timeline(container);
+    var dataTable = new google.visualization.DataTable();
+
+    dataTable.addColumn({ type: 'string', id: 'Term' });
+    dataTable.addColumn({ type: 'string', id: 'Name' });
+    dataTable.addColumn({ type: 'date', id: 'Start' });
+    dataTable.addColumn({ type: 'date', id: 'End' });
+
+    dataTable.addRows([
+      [ 'ھۇن ئىمپىريىسى', 'ئالپ ئەرتۇڭا', new Date(1789, 3, 30), new Date(1797, 2, 4) ],
+	  [ 'ھۇن ئىمپىريىسى', 'كۆلبىلگە ', new Date(1797, 2, 4), new Date(1800, 2, 4) ],
+      [ 'كۆك تۈرك دۆلىتى', 'كۈن تولدى', new Date(1797, 2, 4),  new Date(1801, 2, 4) ],
+      [ 'ئورخۇن ئۇيغۇر خانلىقى', 'ئايتۇغدى',  new Date(1801, 2, 4),  new Date(1809, 2, 4) ],
+	  ['چاغاتاي خانلىقى', 'ئالپ ئەرتۇڭا', new Date(1809, 3, 30), new Date(1850, 2, 4) ]]);
+
+    chart.draw(dataTable);
+  }
+</script>
+
+<div id="example2.1" style="height: 1000px;"></div>
+  </body>
+</html>
